@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exemplo de formulário</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form id="formulario" method="POST">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <!-- Caixa de texto -->
+            <label for="nome">Nome Completo: </label>
+            <input type="text" id="nome"><br><br>
+            <!-- Caixa para senha -->
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha"><br><br>
+            <!-- Botões de escolha única -->
+            <label for="estcivil">Estado Civil: </label>
+            <input type="radio" name="estcivil" value="Solteiro">Solteiro
+            <input type="radio" name="estcivil" value="Casado">Casado
+            <input type="radio" name="estcivil" value="Viúvo">Viúvo<br><br>
+            <!-- Caixas de múltipla escolha -->
+            <label for="interesses">Interesses: </label>
+            <input type="checkbox" name="interesses" value="Música">Música
+            <input type="checkbox" name="interesses" value="Cinema">Cinema
+            <input type="checkbox" name="interesses" value="Teatro">Teatro<br>
+        </fieldset><br>
+        <!-- Campo para upload -->
+        <label for="foto">Foto: </label>
+        <input type="file" id="foto"><br><br>
+        <!-- combox -->
+        <select id="estcivil" name="estcivil">
+            <option value="S" selected>Solteirissimo</option>
+            <option value="C">Casado</option>
+            <option value="V">Viúvo</option>
+            <option value="D">Divorciado</option>
+        </select><br><br>
+        <label for="carros">Carros preferidos</label>
+        <select id="carros" name="carros" size="8" multiple>
+            <optgroup label="FIAT">
+                <option value="500">500</option>
+                <option value="Uno">Palio</option>
+                <option value="Uno">Uno</option>
+            </optgroup>
+            <optgroup label="FORD">
+                <option value="Fiesta">Fiesta</option>
+                <option value="Focus">Focus</option>
+                <option value="Ka">Ka</option>
+            </optgroup>
+        </select><br><br>
+        <label for="obs">Observações</label><br>
+        <textarea id="obs" rows="5" cols="50">Texto de exemplo.</textarea><br><br>
+        <label for="navegador">Qual seu navegador preferido?</label>
+        <input list="navegadores" name="navegador">
+        <datalist id="navegadores">
+            <option value="Google Chrome">Google Chrome</option>
+            <option value="Mozilla Firefox">Mozilla Firefox</option>
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Opera">Opera</option>
+            <option value="Apple Safari">Apple Safari</option>
+        </datalist><br><br>
+        <!-- Botões -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar dados">
+        <input type="button" value="Faz nada">
+
+    </form>
+</body>
+
+</html>
