@@ -1,0 +1,33 @@
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: gray;
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  header, main, footer {
+    background-color: aqua;
+    border: 1px solid #c0c0c0;
+    font-size: 50px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  main {
+    background-color: white;
+  }
+  
+  @media screen and (min-width: 1920px) {
+    main {
+      height: 80vh;
+    }
+  }
+  
+  @media screen and (min-width: 980px) {
+    main {
+      height: 60vh;
+    }
+  }
