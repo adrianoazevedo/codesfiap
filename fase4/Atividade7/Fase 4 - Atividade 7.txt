@@ -1,0 +1,20 @@
+Fase 4 - Atividade 7
+
+Eu já utilizava um repositorio no github para salvar minhas principais atividades e treino dos exemplos dos capitulos.
+
+Repositorio: https://github.com/adrianoazevedo/codesfiap
+
+Está organizada em fases e capitulos.
+
+Para tanto, criei uma pasta local com o nome codesfiap
+	1) inicializei a pasta no git com: git init
+
+	2) conectei meu repositorio local com meu repositorio no github, com: git remote add origin https://github.com/adrianoazevedo/codesfiap.git
+
+Fui criando pasta e subpastas ao longo das fases do semestre na FIAP.
+	3) A cada finalização de atividade, treino, usei esse comando para atualizar meu github:
+		git add .
+		git commit -m "comentario sobre a atividade"
+		git push -u origin main
+
+obs:já tenho configurado o .gitignore com os arquivos que quero filtrar e mandar para o meu repositorio
